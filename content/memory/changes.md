@@ -315,3 +315,24 @@ summary: "Polish Self and Doc views styling/layout for clearer navigation and re
 rollback_hint: "git revert HEAD"
 notes: "No behavior change; UI-only adjustments."
 ```
+
+---
+
+## id: chg-20260225-155639-doc-history-sync
+
+```yaml
+id: "chg-20260225-155639-doc-history-sync"
+timestamp: "2026-02-25T15:56:39Z"
+actor: "agent"
+intent: "docs_cleanup_and_history_sync"
+paths:
+  - "README.md"
+  - "selfware.v0.2.md"
+  - "selfware.v0.2.zh.md"
+  - "selfware.v0.3.md"
+  - "selfware.v0.3.zh.md"
+  - "content/memory/changes.md"
+summary: "Add repository README, remove fragmented v0.x snapshot protocol files, and sync git history to the append-only change records."
+rollback_hint: "git revert HEAD"
+notes: "Current repository keeps a single current protocol line (`selfware.md` / `selfware.en.md`) without parallel v0.x snapshot files."
+```
